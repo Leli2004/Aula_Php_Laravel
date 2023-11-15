@@ -16,8 +16,8 @@
         </select>
         <input type="text" name="valor">
         <button type="submit" class="rounded-full bg-gray-300 px-4 py-2 font-bold hover:bg-gray-200">Buscar</button>
-        <a href="{{ route('aluno.create') }}"><button type="submit" class="rounded-full bg-green-400 px-4 py-2 font-bold hover:bg-green-300">Cadastrar</button></a><br>
     </form>
+    <a href="{{ route('aluno.create') }}"><button type="submit" class="rounded-full bg-green-400 px-4 py-2 font-bold hover:bg-green-300">Cadastrar</button></a><br>
     <table border="1">
         <tr>
             <th>ID</th>
@@ -37,7 +37,7 @@
         @endphp
             <tr>
                 <td>{{$item->id}}</td>
-                <td> <img src="/storage/{{$nome_imagem}}" width="60px" alt="imagem"> </td>
+                <td> <img src="/storage/{{$nome_imagem}}" width="100px" alt="imagem"> </td>
                 <td>{{$item->nome}}</td>
                 <td>{{$item->data_nascimento}}</td>
                 <td>{{$item->email}}</td>
